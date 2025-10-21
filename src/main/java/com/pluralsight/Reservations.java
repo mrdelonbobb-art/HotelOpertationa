@@ -52,8 +52,13 @@ public class Reservations {
     }
 
     public double getReservationTotal() {
+        double total = this.getNumberOfNights() * this.getRoomPrice();
+        if(this.isWeekend()){
+            total = total =(total *.1);
+        }
         return reservationTotal;
 
     }
+
 }
 

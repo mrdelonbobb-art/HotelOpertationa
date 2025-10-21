@@ -23,5 +23,13 @@ Room BasicRoom = new Room("BasicRoom",1,80,false,false,false);
             System.out.println("The King Suite includes a king sized bed with a balcony and costs $139 per night");
         } else System.out.println("please select a room");
 
+        System.out.println("would you like to book this room?");
+        System.out.println("Please type yes or no");
+        String choice = scanner.nextLine().toLowerCase();
+        if (choice.equals("yes")) {
+            System.out.println();
+        } else if (choice.equals("no")) {
+        //add loop  back to main menu
+        }
     }
 }

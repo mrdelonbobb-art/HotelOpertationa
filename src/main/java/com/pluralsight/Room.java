@@ -71,7 +71,29 @@ public class Room {
 
         return false;
     }
+
+    //check in method
+    public void checkIn(){
+        this.setOccupied(true);
+        this.setDirty(true);
+    }
+    // Check out method
+    public void checkOut() {
+        this.setOccupied(false);
+        this.setDirty(true); // room now dirty after guest leaves
+    }
+
+    // Maid cleans the room
+    public void cleanRoom() {
+        if (!this.isOccupied()) {
+            this.setDirty(false);
+            System.out.println("Room cleaned and ready for new guests!");
+        } else {
+            System.out.println("Cannot clean an occupied room!");
+        }
+    }
 }
+
 
 
 
