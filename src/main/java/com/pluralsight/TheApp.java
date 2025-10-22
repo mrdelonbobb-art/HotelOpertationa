@@ -25,7 +25,7 @@ Room BasicRoom = new Room("BasicRoom",1,80,false,false,false);
 
         System.out.println("would you like to book this room?");
         System.out.println("Please type yes or no");
-        String choice = scanner.nextLine().toLowerCase();
+        scanner.nextLine().toLowerCase();
         if (choice.equals("yes")) {
             System.out.println();
         } else if (choice.equals("no")) {
